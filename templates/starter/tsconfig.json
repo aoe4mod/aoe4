@@ -1,0 +1,22 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "ESNext",
+        "lib": ["ESNext"],
+        "moduleResolution": "Node",
+        "types": [
+            "@aoe4mod/types"
+        ],
+        "strict": true
+    },
+    "tstl": {
+        "luaTarget": "5.3",
+        "sourceMapTraceback": false,
+        "noHeader": true,
+        "noImplicitSelf": true,
+        "luaPlugins": [
+            { "name": "@aoe4mod/import-plugin" },
+        ]
+    }
+}

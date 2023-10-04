@@ -1,0 +1,12 @@
+{
+  "name": "@aoe4mod/template-starter",
+  "private": true,
+  "scripts": {
+    "start": "tstl",
+    "dev": "tstl --watch"
+  },
+  "devDependencies": {
+    "@aoe4mod/import-plugin": "workspace:*",
+    "@aoe4mod/types": "workspace:*"
+  }
+}

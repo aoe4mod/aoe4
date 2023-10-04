@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "types": []
+  },
+  "references": [
+    {
+      "path": "./templates/starter"
+    }
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

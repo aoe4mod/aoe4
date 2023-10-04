@@ -1,0 +1,24 @@
+{
+    "name": "@aoe4mod/types",
+    "description": "TypeScript definitions for Age of Empires 4 Lua API",
+    "keywords": [
+        "aoe",
+        "aoe4",
+        "age-of-empires-iv",
+        "lua",
+        "types",
+        "typescript"
+    ],
+    "files": [
+        "index.d.ts",
+        "types/**/*.d.ts"
+    ],
+    "dependencies": {
+        "lua-types": "^2.10.1"
+    },
+    "peerDependencies": {
+        "typescript": "^5",
+        "typescript-to-lua": "0.42.0 || ^1.0.0"
+    },
+    "types": "./index.d.ts"
+}

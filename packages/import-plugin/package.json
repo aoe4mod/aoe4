@@ -1,0 +1,8 @@
+{
+  "name": "@aoe4mod/import-plugin",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "bunchee --external=typescript,typescript-to-lua"
+  }
+}
