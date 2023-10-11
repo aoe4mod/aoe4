@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "types": [
+      "@aoe4mod/types"
+    ],
+    "strict": true,
+    "composite": true
+  },
+  "include": [
+    "./src"
+  ]
+}

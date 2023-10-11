@@ -1,6 +1,7 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "moduleResolution": "nodenext",
+    "moduleResolution": "NodeNext",
     "module": "NodeNext",
     "target": "ESNext",
     "outDir": "./dist",
@@ -8,7 +9,7 @@
     "rootDir": "./src"
   },
   "include": [
-    "src/**/*.ts"
+    "./src"
   ],
   "exclude": [
     "node_modules"

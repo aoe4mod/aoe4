@@ -1,22 +1,38 @@
 {
-    "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
-    "compilerOptions": {
-        "outDir": "./dist",
-        "target": "ESNext",
-        "lib": ["ESNext"],
-        "moduleResolution": "Node",
-        "types": [
-            "@aoe4mod/types"
-        ],
-        "strict": true
+  "extends": "../../tsconfig.json",
+  "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "target": "ESNext",
+    "lib": [
+      "ESNext"
+    ],
+    "moduleResolution": "bundler",
+    "types": [
+      "@aoe4mod/types"
+    ],
+    "paths": {
+      "@aoe4mod/*": [
+        "../../packages/*/src"
+      ]
     },
-    "tstl": {
-        "luaTarget": "5.3",
-        "sourceMapTraceback": false,
-        "noHeader": true,
-        "noImplicitSelf": true,
-        "luaPlugins": [
-            { "name": "@aoe4mod/import-plugin" },
-        ]
+    "strict": true
+  },
+  "references": [
+    {
+      "path": "../../packages/utils"
     }
+  ],
+  "tstl": {
+    "luaTarget": "5.3",
+    "sourceMapTraceback": false,
+    "noHeader": true,
+    "noImplicitSelf": true,
+    "luaPlugins": [
+      {
+        "name": "@aoe4mod/import-plugin"
+      }
+    ]
+  }
 }

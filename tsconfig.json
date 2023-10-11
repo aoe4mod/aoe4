@@ -1,9 +1,26 @@
 {
   "compilerOptions": {
     "composite": true,
-    "types": []
+    "incremental": true,
+    "target": "ESNext",
+    "lib": [
+      "ESNext"
+    ],
+    "types": [],
+    "moduleResolution": "bundler",
+    "paths": {
+      "@aoe4mod/utils": [
+        "./packages/utils/src"
+      ]
+    }
   },
   "references": [
+    {
+      "path": "./packages/import-plugin"
+    },
+    {
+      "path": "./packages/utils"
+    },
     {
       "path": "./templates/starter"
     }
