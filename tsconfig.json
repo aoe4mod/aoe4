@@ -1,9 +1,22 @@
 {
   "compilerOptions": {
     "composite": true,
-    "types": []
+    "incremental": true,
+    "types": [],
+    "lib": [],
+    "paths": {
+      "@aoe4mod/utils": [
+        "./packages/utils/src"
+      ]
+    }
   },
   "references": [
+    {
+      "path": "./packages/import-plugin"
+    },
+    {
+      "path": "./packages/utils"
+    },
     {
       "path": "./templates/starter"
     }

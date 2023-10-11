@@ -3,6 +3,9 @@
   "private": false,
   "packageManager": "pnpm@8.9.0",
   "type": "module",
+  "scripts": {
+    "typecheck": "tsc -b"
+  },
   "devDependencies": {
     "bunchee": "^3.9.0",
     "ts-node": "^10.9.1",

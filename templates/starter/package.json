@@ -5,6 +5,9 @@
     "build": "tstl",
     "dev": "tstl --watch"
   },
+  "dependencies": {
+    "@aoe4mod/utils": "workspace:*"
+  },
   "devDependencies": {
     "@aoe4mod/import-plugin": "workspace:*",
     "@aoe4mod/types": "workspace:*"

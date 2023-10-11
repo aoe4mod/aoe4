@@ -35,7 +35,17 @@ importers:
         specifier: 0.42.0 || ^1.0.0
         version: 1.20.1(typescript@5.2.2)
 
+  packages/utils:
+    devDependencies:
+      '@aoe4mod/types':
+        specifier: workspace:*
+        version: link:../type
+
   templates/starter:
+    dependencies:
+      '@aoe4mod/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
     devDependencies:
       '@aoe4mod/import-plugin':
         specifier: workspace:*
