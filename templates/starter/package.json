@@ -2,7 +2,7 @@
   "name": "@aoe4mod/template-starter",
   "private": true,
   "scripts": {
-    "start": "tstl",
+    "build": "tstl",
     "dev": "tstl --watch"
   },
   "devDependencies": {
