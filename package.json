@@ -7,7 +7,6 @@
     "typecheck": "tsc -b"
   },
   "devDependencies": {
-    "bunchee": "^3.9.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
     "typescript-to-lua": "^1.20.1"

@@ -1,7 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "moduleResolution": "nodenext",
     "module": "NodeNext",
     "target": "ESNext",
     "outDir": "./dist",

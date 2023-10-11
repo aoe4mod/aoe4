@@ -2,8 +2,12 @@
   "compilerOptions": {
     "composite": true,
     "incremental": true,
+    "target": "ESNext",
+    "lib": [
+      "ESNext"
+    ],
     "types": [],
-    "lib": [],
+    "moduleResolution": "bundler",
     "paths": {
       "@aoe4mod/utils": [
         "./packages/utils/src"
